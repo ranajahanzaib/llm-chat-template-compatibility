@@ -1,0 +1,3 @@
+# Limitations
+
+LLM Chat Template Compatibility does not establish complete vocabulary equivalence, source weight identity, or deterministic numerical equivalence. Shared/crossover execution requires vocabulary size, matching BOS/EOS IDs, and checked token vectors. When a llama.cpp server does not expose enough metadata, those modes stop as unverified. The web inspector displays stored experiments and the synthetic demo. Runtime endpoints and metadata vary across versions. The tool does not execute tools, inspect hidden server prompts, benchmark speed, or prove that a prompt discrepancy caused an output discrepancy.
