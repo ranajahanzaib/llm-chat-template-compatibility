@@ -1,0 +1,7 @@
+conversation_id: simple-user
+description: "Basic exact-response check."
+messages:
+  - role: user
+    content: "Reply with exactly the word READY."
+expected_behavior: "Return exactly READY."
+template_options: {}

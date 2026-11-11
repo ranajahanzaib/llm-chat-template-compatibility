@@ -1,0 +1,21 @@
+conversation_id: tool-result
+description: Tool-call and tool-result role formatting; no tool is executed.
+messages:
+  - role: user
+    content: "What is 2 plus 2?"
+  - role: assistant
+    content: ""
+    tool_calls:
+      - id: call-1
+        type: function
+        function:
+          name: calculator
+          arguments: "{\"expression\":\"2+2\"}"
+  - role: tool
+    tool_call_id: call-1
+    name: calculator
+    content: "4"
+  - role: assistant
+    content: "The result is 4."
+expected_behavior: "Preserve the tool call and result boundaries without executing either."
+template_options: {}

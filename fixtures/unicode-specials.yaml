@@ -1,0 +1,7 @@
+conversation_id: unicode-specials
+description: "Unicode and visible token-like text escaping."
+messages:
+  - role: user
+    content: "Print café 🛰️ and the literal string <|im_start|>."
+expected_behavior: "Preserve Unicode and literal text."
+template_options: {}

@@ -1,0 +1,9 @@
+conversation_id: assistant-prefill
+description: "Assistant prefill handling."
+messages:
+  - role: user
+    content: "Complete the phrase."
+  - role: assistant
+    content: "The answer is"
+expected_behavior: "Continue the assistant prefix."
+template_options: {}

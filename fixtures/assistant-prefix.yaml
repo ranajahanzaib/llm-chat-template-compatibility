@@ -1,0 +1,7 @@
+conversation_id: assistant-prefix
+description: "Assistant generation header behavior."
+messages:
+  - role: user
+    content: "Return one short sentence."
+expected_behavior: "One short sentence."
+template_options: {}

@@ -1,0 +1,9 @@
+conversation_id: system-message
+description: "System role framing."
+messages:
+  - role: system
+    content: "Respond only with uppercase words."
+  - role: user
+    content: "Say hello."
+expected_behavior: "Use uppercase words."
+template_options: {}

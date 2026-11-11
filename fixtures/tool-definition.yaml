@@ -1,0 +1,17 @@
+conversation_id: tool-definition
+description: Tool definition serialization; model-emitted calls are recorded but never executed.
+messages:
+  - role: user
+    content: "What is the weather in Oslo?"
+tools:
+  - name: get_weather
+    description: Return a weather summary for a named city.
+    parameter_schema:
+      type: object
+      properties:
+        city:
+          type: string
+      required: [city]
+      additionalProperties: false
+expected_behavior: "Discuss or select the weather tool; the compatibility tool never executes it."
+template_options: {}

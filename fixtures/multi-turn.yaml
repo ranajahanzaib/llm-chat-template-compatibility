@@ -1,0 +1,11 @@
+conversation_id: multi-turn
+description: "Conversation history preservation."
+messages:
+  - role: user
+    content: "My project identifier is ORBIT-42."
+  - role: assistant
+    content: "Understood."
+  - role: user
+    content: "Repeat my project identifier."
+expected_behavior: "Include ORBIT-42."
+template_options: {}
