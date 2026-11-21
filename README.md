@@ -6,6 +6,32 @@ LLM Chat Template Compatibility is a focused tool for reproducing and investigat
 
 > Same conversation does not necessarily mean same model input. An output mismatch alone does not prove a chat-template bug.
 
+## See it in action
+
+The local inspector loads a synthetic comparison so you can see prompt rendering, token alignment, generation output, and findings without downloading models. Synthetic values demonstrate report behavior only; they are not measured inference.
+
+![Dashboard overview showing synthetic prompt paths, token alignment, and output](docs/screenshots/dashboard-overview.png)
+
+The built-in CLI demo runs the same comparison and reporting pipeline. Example output (repository path shortened):
+
+```console
+$ templateparity demo --json
+{
+  "experiment_id": "synthetic-demo",
+  "json": ".templateparity/runs/synthetic-demo.json",
+  "markdown": ".templateparity/runs/synthetic-demo.md",
+  "label": "Synthetic demonstration — not measured model inference."
+}
+```
+
+![Terminal capture of the demo command and generated report](docs/screenshots/cli-demo.svg)
+
+The dashboard's findings view is also captured below. No model was run for these screenshots.
+
+![Dashboard diagnostic findings for the synthetic comparison](docs/screenshots/dashboard-findings.png)
+
+The local inspector presents prompt renderings, token alignment, generation output, and diagnostic findings. Real-runtime comparisons require local MLX-LM and llama.cpp model setups as described below.
+
 ## Why this exists
 
 Chat models consume token sequences, not abstract role/content objects. Runtimes may render system messages, role boundaries, assistant generation prefixes, BOS/EOS markers, and tool declarations differently. Then each tokenizer can map the rendered text to different IDs. Finally, inference engines can produce different outputs even from the same token IDs because model conversions, numerical precision, kernels, and stopping behavior differ. [Transformers chat template documentation](https://huggingface.co/docs/transformers/chat_templating) explains the conversion from messages to model-specific token sequences.

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="760" viewBox="0 0 1120 760">
+<rect width="1120" height="760" rx="18" fill="#10151d"/>
+<path d="M0 18a18 18 0 0 1 18-18h1084a18 18 0 0 1 18 18v42H0z" fill="#1c2430"/>
+<circle cx="28" cy="30" r="7" fill="#ff6b64"/><circle cx="52" cy="30" r="7" fill="#ffc04d"/><circle cx="76" cy="30" r="7" fill="#45c982"/>
+<text x="560" y="36" text-anchor="middle" fill="#aab6c5" font-family="system-ui,sans-serif" font-size="14">Real CLI run · synthetic demo data</text>
+<text x="34" y="92" fill="#81d5a5" font-family="Menlo,monospace" font-size="17">$ templateparity demo --json</text>
+<text x="34" y="122" fill="#e5edf5" font-family="Menlo,monospace" font-size="15">{</text>
+<text x="34" y="146" fill="#e5edf5" font-family="Menlo,monospace" font-size="15">  &quot;experiment_id&quot;: &quot;synthetic-demo&quot;,</text>
+<text x="34" y="170" fill="#e5edf5" font-family="Menlo,monospace" font-size="15">  &quot;json&quot;: &quot;./.templateparity/runs/synthetic-demo.json&quot;,</text>
+<text x="34" y="194" fill="#e5edf5" font-family="Menlo,monospace" font-size="15">  &quot;markdown&quot;: &quot;./.templateparity/runs/synthetic-demo.md&quot;,</text>
+<text x="34" y="218" fill="#e5edf5" font-family="Menlo,monospace" font-size="15">  &quot;label&quot;: &quot;Synthetic demonstration \u2014 not measured model inference.&quot;</text>
+<text x="34" y="242" fill="#e5edf5" font-family="Menlo,monospace" font-size="15">}</text>
+<text x="34" y="290" fill="#81d5a5" font-family="Menlo,monospace" font-size="17">$ templateparity report synthetic-demo</text>
+<text x="34" y="321" fill="#91a0b2" font-family="Menlo,monospace" font-size="14"># Captured report excerpt from the generated artifact</text>
+<text x="34" y="352" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">Mode: native</text>
+<text x="34" y="374" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">Compatibility: synthetic; no tokenizer claim</text>
+<text x="34" y="396" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">The fabricated example shows a prompt, assistant-prefix, BOS, stop-policy, and output difference. It demonstrates</text>
+<text x="34" y="418" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">  report behavior only; it is not measured inference.</text>
+<text x="34" y="440" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">- TP001 (warning) Rendered prompt text differs. The runtimes serialize the logical conversation differently.</text>
+<text x="34" y="462" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">  Suggested: Inspect the text diff and run a shared-input control.</text>
+<text x="34" y="484" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">- TP003 (warning) An inserted or deleted token in the aligned sequence is identified as BOS by tokenizer metadata. BOS</text>
+<text x="34" y="506" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">  handling differs for this observed input. Suggested: Compare native template tokenization with text tokenization and</text>
+<text x="34" y="528" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">  check for duplicate BOS.</text>
+<text x="34" y="550" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">- TP005 (info) Assistant header/prefix text is not identical. Generation may begin from different assistant prefixes.</text>
+<text x="34" y="572" fill="#e5edf5" font-family="Menlo,monospace" font-size="13">  Suggested: Inspect the final rendered prompt segment.</text>
+<text x="34" y="735" fill="#8290a1" font-family="system-ui,sans-serif" font-size="13">Synthetic token IDs and outputs demonstrate report behavior; no model inference was run.</text>
+</svg>
