@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use LLM Chat Template Compatibility in research or teaching, please cite this software."
+title: "LLM Chat Template Compatibility"
+version: 0.1.0
+authors:
+  - family-names: Rana
+    given-names: Jahanzaib
+    orcid: "https://orcid.org/0009-0006-7085-0440"
+repository-code: "https://github.com/ranajahanzaib/llm-chat-template-compatibility"
+license: MIT
+abstract: "LLM Chat Template Compatibility is a focused tool for reproducing and investigating inference prompt-path discrepancies across MLX-LM on Apple Silicon and a local llama.cpp server."
+keywords:
+  - llm
+  - chat-templates
+  - tokenization
+  - mlx
+  - llama-cpp
